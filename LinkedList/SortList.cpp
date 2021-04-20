@@ -60,7 +60,7 @@ ListNode* MergeSort(ListNode* head, ListNode* tail){
     ListNode* sec = MergeSort(mid->next,tail);
     return merge(first,sec);
 }
-ListNode* Solution::sortList(ListNode* head) {
+ListNode* sortList(ListNode* head) {
     if (head == NULL || head->next == NULL){
         return head;
     }
