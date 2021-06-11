@@ -27,6 +27,6 @@ bool helper(TreeNode* root, int k,vector<int>& result){
  
 vector<int> solve(TreeNode* root, int k){
     vector<int> result;
-    bool flag = helper(root,k,result);
+    helper(root,k,result);
     return result;
 }
